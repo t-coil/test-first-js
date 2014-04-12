@@ -58,9 +58,5 @@ function factorial (num) {
 
 function concat_string () {
 	var string = Array.prototype.slice.call(arguments);
-	var total = "";
-	for(var i = 0; i < string.length; i++) {
-		total += string[i];
-	}
-	return total;
+	return string.join("");
 }
